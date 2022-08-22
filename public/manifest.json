@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Feetura",
+  "name": "let's build a feetura",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,9 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "gcm_sender_id": "103953800507",
+  "gcm_user_visible_only": true,
+  "gcm_icon": "icon-512.png",
+  "gcm_badge": "icon-512.png"
 }
