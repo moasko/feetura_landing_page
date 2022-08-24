@@ -10,7 +10,6 @@ function Header() {
             <Wrap spacing='30px' justify="flex-end" align='center'>
            
             </Wrap>
-
         </div>
     )
 }

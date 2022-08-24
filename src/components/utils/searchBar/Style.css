@@ -26,7 +26,6 @@
 }
 
 .searchDorpdown {
-    position: absolute;
     width: 550px;
     background-color: #fff;
     border-radius: 0px 0px 5px 5px;
@@ -35,7 +34,7 @@
     padding: 20px;
 }
 
-.suggest_item{
+.suggest_item {
     text-align: left;
     padding: 10px;
     display: flex;
@@ -43,18 +42,22 @@
     align-items: center;
     border-radius: 5px;
 }
-.suggest_item p{
+
+.searcheContainer {}
+
+.suggest_item p {
     color: #78798B;
     font-size: 18px;
 }
-.suggest_item:hover{
+
+.suggest_item:hover {
     background-color: #F6F5FB;
 }
 
-.animated_text{
+.animated_text {
     animation: animated_text 1s infinite;
 }
 
-.animated_text{
+.animated_text {
     overflow: hidden;
 }

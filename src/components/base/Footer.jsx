@@ -11,11 +11,15 @@ import {
   WrapItem
 } from '@chakra-ui/react'
 import { FiSettings } from "react-icons/fi"
+import { Button} from '@chakra-ui/react'
+import {AiOutlineHeart} from "react-icons/ai" 
+import {MdNotificationsNone} from "react-icons/md" 
+import {FiCalendar} from "react-icons/fi"
 
 
 function Footer() {
 
-  const [lang, setLang] = useState('français')
+  const [lang, setLang] = useState('English')
 
 
   return (
@@ -23,21 +27,27 @@ function Footer() {
       <Flex justify="space-between">
         <Wrap spacingX={10} align="center">
           <WrapItem>
-            <a href='/'>Advertising</a>
+          <Flex justifyContent="space-between">
+                    <Button bgColor={"transparent"} color='red' leftIcon={<AiOutlineHeart />}>
+                        Donate
+                    </Button>
+                    <Button bgColor={"transparent"} color='#0583f1' leftIcon={<MdNotificationsNone />}>
+                        Join our waiting list
+                    </Button>
+                </Flex>
           </WrapItem>
-          <WrapItem>
-            <a href='/'>Business</a>
-          </WrapItem>
-          <WrapItem>
-            <a href='/'>About</a>
-          </WrapItem>
+          <Button bgColor={"transparent"} color='#0583f1' leftIcon={<FiCalendar />}>
+                        Calendy
+                    </Button>
+     
+
         </Wrap>
         <Wrap spacingX={10} align="center">
           <WrapItem>
-            <a href='/'>Terms</a>
+            <a href='/'>Terms & Privacy</a>
           </WrapItem>
           <WrapItem>
-            <a href='/'>Privacy</a>
+            <a href='/'>Contact</a>
           </WrapItem>
           <FiSettings />
           <Menu>
@@ -47,8 +57,8 @@ function Footer() {
               </div>
             </MenuButton>
             <MenuList onChange={(va) => setLang(va.target.value)}>
-              <MenuItem value="fr">Français</MenuItem>
-              <MenuItem value={"us"}>Englais</MenuItem>
+              <MenuItem value="fr">English</MenuItem>
+              <MenuItem value={"us"}>fr</MenuItem>
             </MenuList>
           </Menu>
         </Wrap>
