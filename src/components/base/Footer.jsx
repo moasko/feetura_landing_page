@@ -11,10 +11,10 @@ import {
   WrapItem
 } from '@chakra-ui/react'
 import { FiSettings } from "react-icons/fi"
-import { Button} from '@chakra-ui/react'
-import {AiOutlineHeart} from "react-icons/ai" 
-import {MdNotificationsNone} from "react-icons/md" 
-import {FiCalendar} from "react-icons/fi"
+import { Button } from '@chakra-ui/react'
+import { AiOutlineHeart } from "react-icons/ai"
+import { MdNotificationsNone } from "react-icons/md"
+import { FiCalendar } from "react-icons/fi"
 
 
 function Footer() {
@@ -27,20 +27,18 @@ function Footer() {
       <Flex justify="space-between">
         <Wrap spacingX={10} align="center">
           <WrapItem>
-          <Flex justifyContent="space-between">
-                    <Button bgColor={"transparent"} color='red' leftIcon={<AiOutlineHeart />}>
-                        Donate
-                    </Button>
-                    <Button bgColor={"transparent"} color='#0583f1' leftIcon={<MdNotificationsNone />}>
-                        Join our waiting list
-                    </Button>
-                </Flex>
+            <Flex justifyContent="space-between">
+              <Button bgColor={"transparent"} color='red' leftIcon={<AiOutlineHeart />}>
+                Donate
+              </Button>
+              <Button bgColor={"transparent"} color='#0583f1' leftIcon={<MdNotificationsNone />}>
+                Join our waiting list
+              </Button>
+            </Flex>
           </WrapItem>
           <Button bgColor={"transparent"} color='#0583f1' leftIcon={<FiCalendar />}>
-                        Calendy
-                    </Button>
-     
-
+            Calendy
+          </Button>
         </Wrap>
         <Wrap spacingX={10} align="center">
           <WrapItem>

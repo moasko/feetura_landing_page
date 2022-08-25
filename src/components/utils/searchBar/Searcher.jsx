@@ -10,8 +10,6 @@ import { HiChevronRight } from "react-icons/hi"
 import "./Style.css"
 import TextTransition, { presets } from "react-text-transition";
 import { Button} from '@chakra-ui/react'
-import {AiOutlineHeart} from "react-icons/ai" 
-import {MdNotificationsNone} from "react-icons/md" 
 
 const text1 = [
     {
